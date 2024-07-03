@@ -25,7 +25,10 @@ const FieldList = () => {
         <div className='fieldList-num'>
           <text className='fieldList-num-text'>1</text>
         </div>
-        <text className='fieldList-mainText'>선수이름</text>
+        <div className='fieldList-textArea'>
+          <text className='fieldList-mainText'>선수이름</text>
+          <text className='fieldList-subText'>선수 설명</text>
+        </div>
       </div>
       <div className='fieldList-list'></div>
     </div>
