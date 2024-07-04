@@ -21,13 +21,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #2c3e50;
+  background-image: linear-gradient(to right, #142a50, #283e70);
 }
 .field {
   position: relative;
   width: 61.5vh;
   height: 95vh;
-  background-color: #27ae60;
+  background-color: #27ab5e;
   border: 0.6vh solid #fff;
 }
 .center-circle,
@@ -107,7 +107,93 @@
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  background: #d9d9d9;
+  background: #eaeaea;
+  border-bottom-left-radius: 10px;
+}
+.fieldList-Rtab {
+  position: absolute;
+  background: #eaeaea;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 5vh;
+  height: 10vh;
+  right: 33.9vh;
+  display: flex;
+  flex-direction: column;
+}
+.fieldList-RtabBtn {
+  width: 4.9vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldList-RtabBtn:hover {
+  cursor: pointer;
+}
+.fieldList-RtabPlayers {
+  width: 4.9vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldList-RtabPlayersCon {
+  width: 4.4vh;
+  height: 4.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #234291;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.fieldList-RtabPlayersCon:hover {
+  cursor: pointer;
+  background-color: #3b5fb9;
+}
+.fieldList-Rtab-closed {
+  position: absolute;
+  background: #eaeaea;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 5vh;
+  height: 10vh;
+  right: 0;
+  top: 2.5vh;
+  display: flex;
+  flex-direction: column;
+}
+.fieldList-RtabBtn-closed {
+  width: 4.9vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldList-RtabBtn-closed:hover {
+  cursor: pointer;
+}
+.fieldList-RtabPlayers-closed {
+  width: 4.9vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldList-RtabPlayersCon-closed {
+  width: 4.4vh;
+  height: 4.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #234291;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.fieldList-RtabPlayersCon-closed:hover {
+  cursor: pointer;
+  background-color: #3b5fb9;
 }
 .fieldList-list {
   position: relative;
@@ -120,6 +206,11 @@
   border-radius: 8px;
   background: #fff;
   gap: 0.5vh;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.fieldList-list:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 .fieldList-num {
   display: flex;
@@ -133,6 +224,7 @@
   top: 12px;
   border-radius: 60px;
   background: #1f2024;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .fieldList-num-text {
   color: #fff;
@@ -145,7 +237,7 @@
 }
 .fieldList-textArea {
   position: relative;
-  left: 2.5vh;
+  left: 2.8vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +247,7 @@
 .fieldList-mainText {
   color: #1f2024;
   font-family: 'Inter';
-  font-size: 14px;
+  font-size: 1.8vh;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -164,7 +256,7 @@
 .fieldList-subText {
   color: #71727a;
   font-family: 'Inter';
-  font-size: 10px;
+  font-size: 1.3vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
