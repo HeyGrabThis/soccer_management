@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Draggable, { DraggableCore } from 'react-draggable';
+import Draggable from 'react-draggable';
 
 const DndPractice = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 }); // position값 저장

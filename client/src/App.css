@@ -110,6 +110,7 @@
   background: #eaeaea;
   border-bottom-left-radius: 10px;
 }
+
 .fieldList-Rtab {
   position: absolute;
   background: #eaeaea;
@@ -138,19 +139,19 @@
   justify-content: center;
   align-items: center;
 }
-.fieldList-RtabPlayersCon {
+.fieldList-RtabPlayersPlus {
   width: 4.4vh;
   height: 4.4vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #234291;
+  background-color: #d1266a;
   border-radius: 5px;
   transition: all 0.3s;
 }
-.fieldList-RtabPlayersCon:hover {
+.fieldList-RtabPlayersPlus:hover {
   cursor: pointer;
-  background-color: #3b5fb9;
+  background-color: rgb(189, 51, 106);
 }
 .fieldList-Rtab-closed {
   position: absolute;
@@ -195,19 +196,23 @@
   cursor: pointer;
   background-color: #3b5fb9;
 }
+.fieldList-reorder {
+  padding: 0;
+  margin: 0;
+}
 .fieldList-list {
   position: relative;
   display: flex;
+  flex-direction: row;
   width: 28vh;
   height: 9vh;
   margin-top: 1vh;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   background: #fff;
   gap: 0.5vh;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .fieldList-list:hover {
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -237,7 +242,7 @@
 }
 .fieldList-textArea {
   position: relative;
-  left: 2.8vh;
+  left: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,4 +266,12 @@
   font-weight: 400;
   line-height: normal;
   align-self: stretch;
+}
+.fieldList-hamburgerIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 24vh;
+  cursor: pointer;
 }
