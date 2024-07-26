@@ -1,7 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Reorder, useDragControls } from 'framer-motion';
+import Draggable from 'react-draggable';
 
 const Field = () => {
+  const [position1, setPosition1] = useState({ x: 0, y: 0 }); // position값 저장
+  const updatePos1 = (data) => {
+    setPosition1({ x: data.x, y: data.y }); // position변경
+  };
+  const changePos = () => {
+    setPosition1({ x: 0, y: 0 });
+  };
   return (
     <div className='fd-background'>
       <div className='field'>
@@ -15,6 +23,25 @@ const Field = () => {
         <div className='goal bottom'></div>
         <div className='penalty-spot top'></div>
         <div className='penalty-spot bottom'></div>
+        <Draggable onDrag={(e, data) => {}} bounds='.field'>
+          <div className='field-ball'></div>
+        </Draggable>
+        <Draggable
+          onDrag={(e, data) => {
+            updatePos1(data);
+          }}
+          bounds='.field'
+          position={position1}
+        >
+          <div className='field-player'>
+            <span className='field-player-text'>1</span>
+          </div>
+        </Draggable>
+        <Draggable onDrag={(e, data) => {}} bounds='.field'>
+          <div className='field-player'>
+            <span className='field-player-text'>2</span>
+          </div>
+        </Draggable>
       </div>
       <FieldList></FieldList>
     </div>

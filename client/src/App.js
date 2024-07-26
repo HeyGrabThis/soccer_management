@@ -10,6 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='/dnd' element={<DndPractice />} />
         <Route path='/field' element={<Field />} />
       </Routes>
     </>
